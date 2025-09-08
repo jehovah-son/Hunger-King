@@ -16,7 +16,7 @@ export default function Navbar() {
         <Link href="/">Hunger Kings</Link>
       </div>
       <div className="md:flex gap-5 flex-1 justify-end  md:block hidden">
-        <div className="flex items-center gap-2 rounded-md px-1 ">
+        <div className="flex items-center gap-2 bg-orange-300 rounded-md px-1 ">
           <Image src={Phone} alt="phone" width={20} height={20} />
           <span className="truncate">081-184-77-430</span>
         </div>
