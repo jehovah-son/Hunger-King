@@ -15,7 +15,7 @@ const data = [
   {
     id: 2,
     image: Slider2,
-    title: "we deliver your order wherever you are in Lag",
+    title: "we deliver your order wherever you are in Lagos",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ export default function Slider() {
         <h1 className="text-4xl sm:text-4xl md:text-5xl xl:text-6xl text-center uppercase  p-2 md:p-5">
           {data[currentIndex].title}
         </h1>
-        <button className="ring-1 ring-red-500 bg-red-500 text-white py-3 px-6 rounded-md hover:bg-red-600 transition">
+        <button className=" bg-red-500 text-white px-6 py-3 rounded-md hover:bg-red-600 transition">
           Order Now
         </button>
       </div>
