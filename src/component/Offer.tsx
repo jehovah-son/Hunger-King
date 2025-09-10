@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import OfferProduct from "../../public/offerProduct.png";
+import Button from "./Button";
 
 import CountDown from "../component/CountDown";
 
@@ -17,9 +18,7 @@ export default function OfferSection() {
           of empowerment. Quickly pontificate parallel
         </p>
         <CountDown />
-        <button className="bg-red-500 text-white px-6 py-3 rounded-md hover:bg-red-600 transition">
-          Order Now
-        </button>
+        <Button href="" text=" Order Now" />
       </div>
 
       {/* Image area */}

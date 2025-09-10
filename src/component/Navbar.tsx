@@ -2,6 +2,7 @@ import Link from "next/link";
 import Phone from "../../public/phone.png";
 import Image from "next/image";
 import MenuPage from "@/app/menu/page";
+import CartIcon from "./CartIcon";
 
 export default function Navbar() {
   const user = false;
@@ -26,7 +27,9 @@ export default function Navbar() {
         ) : (
           <Link href="/login">Login</Link>
         )}
-        <Link href="/cart">Cart</Link>
+        <Link href="/cart">
+          <CartIcon />
+        </Link>
       </div>
       {/* mobile view menu */}
       <div className="md:hidden block">

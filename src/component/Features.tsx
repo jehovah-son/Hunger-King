@@ -1,5 +1,6 @@
 import { featuredProducts } from "@/data/DummyData";
 import Image from "next/image";
+import Button from "./Button";
 
 export default function Features() {
   return (
@@ -30,11 +31,9 @@ export default function Features() {
             <p className="mt-2 text-red-500 md:text-sm text-base ">
               {product.desc}
             </p>
-            <p className="mt-2 text-red-500 font-bold">${product.price}</p>
+            <p className="my-4  text-red-500 font-bold">${product.price}</p>
 
-            <button className="mt-4 bg-red-500 text-white px-6 py-3 rounded-md hover:bg-red-600 transition">
-              Add to Cart
-            </button>
+            <Button href="" text="Add to Cart" />
           </div>
         ))}
       </div>

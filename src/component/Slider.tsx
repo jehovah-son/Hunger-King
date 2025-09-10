@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Slider1 from "../../public/slide1.png";
 import Slider2 from "../../public/slide2.png";
 import Slider3 from "../../public/slide3.jpg";
+import Button from "./Button";
 
 const data = [
   {
@@ -45,9 +46,7 @@ export default function Slider() {
         <h1 className="text-4xl sm:text-4xl md:text-5xl xl:text-6xl text-center uppercase  p-2 md:p-5">
           {data[currentIndex].title}
         </h1>
-        <button className=" bg-red-500 text-white px-6 py-3 rounded-md hover:bg-red-600 transition">
-          Order Now
-        </button>
+        <Button href="" text=" Order Now" />
       </div>
 
       {/* Image area */}
