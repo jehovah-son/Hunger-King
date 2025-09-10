@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Phone from "../../public/phone.png";
 import Image from "next/image";
-import MenuPage from "@/app/menu/page";
+import Menu from "@/component/Menu";
 import CartIcon from "./CartIcon";
 
 export default function Navbar() {
@@ -33,7 +33,7 @@ export default function Navbar() {
       </div>
       {/* mobile view menu */}
       <div className="md:hidden block">
-        <MenuPage />
+        <Menu />
       </div>
     </div>
   );

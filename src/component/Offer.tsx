@@ -18,7 +18,7 @@ export default function OfferSection() {
           of empowerment. Quickly pontificate parallel
         </p>
         <CountDown />
-        <Button href="" text=" Order Now" />
+        <Button url="" text=" Order Now" />
       </div>
 
       {/* Image area */}

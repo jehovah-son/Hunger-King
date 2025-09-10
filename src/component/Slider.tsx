@@ -46,7 +46,7 @@ export default function Slider() {
         <h1 className="text-4xl sm:text-4xl md:text-5xl xl:text-6xl text-center uppercase  p-2 md:p-5">
           {data[currentIndex].title}
         </h1>
-        <Button href="" text=" Order Now" />
+        <Button url="" text=" Order Now" />
       </div>
 
       {/* Image area */}

@@ -33,7 +33,7 @@ export default function Features() {
             </p>
             <p className="my-4  text-red-500 font-bold">${product.price}</p>
 
-            <Button href="" text="Add to Cart" />
+            <Button url="" text="Add to Cart" />
           </div>
         ))}
       </div>
