@@ -2,6 +2,7 @@ import React from "react";
 import { menu } from "@/data/DummyData";
 import Link from "next/link";
 import Button from "@/component/Button";
+import clsx from "clsx";
 
 export default function MenuPage() {
   return (
@@ -10,7 +11,7 @@ export default function MenuPage() {
         <Link
           href={`/menu/${item.slug}`}
           key={item.id}
-          className="relative flex-1 h-64 md:h-96 rounded-lg overflow-hidden group"
+          className="relative md:h-96 h-50 rounded-lg overflow-hidden group"
           style={{
             backgroundImage: `url(${item.img})`,
             backgroundSize: "cover",
@@ -18,15 +19,36 @@ export default function MenuPage() {
           }}
         >
           {/* Overlay for readability */}
-          <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all"></div>
+          <div className="absolute inset-0  group-hover:bg-black/30 transition-all"></div>
 
           {/* Text content */}
-          <div className="relative z-10 flex flex-col justify-center items-start p-6 text-white h-full w-full">
+          <div
+            className={` flex flex-1 flex-col justify-center items-start p-6  h-full w-full text-${item.color}`}
+          >
             <h2 className="text-2xl md:text-4xl font-bold mb-2">
               {item.title}
             </h2>
-            <p className="text-sm md:text-base opacity-90 ">{item.desc}</p>
-            <button className="mt-4 bg-red-500 text-white px-6 py-2 rounded-md hover:bg-red-600 transition">
+            <p className=" text-xs font-bold ">{item.desc}</p>
+            {/* <button
+              className={`mt-4  text-white px-6 py-2 rounded-md hover:bg-${
+                item.color
+              } transition bg-${item.color}  cursor-pointer text-${
+                item.color == "black" ? " blue" : "text-red-500"
+              }`}
+            >
+              Explore
+            </button> */}
+            <button
+              className={clsx(
+                "mt-4 px-6 py-2 rounded-md transition cursor-pointer md:block hidden",
+                {
+                  "bg-black text-white hover:bg-gray-800":
+                    item.color === "black",
+                  "bg-white text-red-500 hover:bg-red-600":
+                    item.color === "white",
+                }
+              )}
+            >
               Explore
             </button>
           </div>
