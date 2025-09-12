@@ -1,7 +1,7 @@
 import React from "react";
 import { menu } from "@/data/DummyData";
 import Link from "next/link";
-import Button from "@/component/Button";
+
 import clsx from "clsx";
 
 export default function MenuPage() {

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { pizzas } from "@/data/DummyData";
-import Button from "@/component/Button";
 
 export default function CategoryPage() {
   return (
@@ -24,7 +23,9 @@ export default function CategoryPage() {
             <h2 className="text-xl font-bold  mb-2">{pizza.title}</h2>
             <p className=" group-hover:hidden">${pizza.price}</p>
             <div className="hidden group-hover:block">
-              <Button url="" text="Add to Cart" />
+              <button className="bg-red-500 text-white p-2 w-max-content rounded-md hover:bg-red-600 transition cursor-pointer">
+                Add to Cart
+              </button>
             </div>
           </div>
         </Link>
