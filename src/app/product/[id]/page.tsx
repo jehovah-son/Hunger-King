@@ -4,7 +4,7 @@ import Price from "@/component/Price";
 
 export default function SingleProductPage() {
   return (
-    <div className="p-4 flex flex-col h-screen  md:flex-row gap-6 flex-1 justify-around items-center">
+    <div className="p-4  md:px-20 flex flex-col h-screen  md:flex-row gap-6 flex-1 justify-around items-center">
       {/* image area */}
       <div
         className=" relative w-full h-[70vh] hover:rotate-[60deg] transition-all duration-500"
