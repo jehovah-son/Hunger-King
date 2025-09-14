@@ -10,6 +10,27 @@ export default function Price({ price, options }: Props) {
   const [selected, setSelected] = useState(0);
   const [totalPrice, setTotalPrice] = useState(price);
   const [quantity, setQuantity] = useState(1);
+
+  //example
+
+  // quantity = 2;
+  // price = 10;
+  // options = [{ additionalPrice: 5 }, { additionalPrice: 7 }];
+  // selected = 1;
+
+  // Since options exists, it takes:
+  // price (10) + options[1].additionalPrice (7) = 17
+
+  // Multiply by quantity: 2 * 17 = 34
+
+  // 👉 setTotal(34)
+
+  useEffect(() => {
+    setTotalPrice(
+      quantity * (price + (options ? options[selected].additionalPrice : price))
+    );
+  }, [selected, quantity, options, price]);
+
   return (
     <div className="flex flex-col gap-5">
       {/* price */}
@@ -26,7 +47,6 @@ export default function Price({ price, options }: Props) {
             }}
             onClick={() => {
               setSelected(index);
-              setTotalPrice(price + option.additionalPrice);
             }}
           >
             {option.title}
