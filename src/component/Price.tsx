@@ -27,12 +27,12 @@ export default function Price({ price, options }: Props) {
 
   useEffect(() => {
     setTotalPrice(
-      quantity * (price + (options ? options[selected].additionalPrice : price))
+      quantity * (options ? price + options[selected].additionalPrice : price)
     );
   }, [selected, quantity, options, price]);
 
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5 pb-5">
       {/* price */}
       <h1 className="">${totalPrice.toFixed(2)}</h1>
       {/* size */}

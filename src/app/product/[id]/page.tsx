@@ -4,7 +4,7 @@ import Price from "@/component/Price";
 
 export default function SingleProductPage() {
   return (
-    <div className="p-4  md:px-20 flex flex-col h-screen  md:flex-row gap-6 flex-1 justify-around items-center">
+    <div className="pt-4 px-4 md:px-20 flex flex-col h-screen  md:flex-row gap-6 flex-1 justify-around md:items-center overflow-hidden">
       {/* image area */}
       <div
         className=" relative w-full h-[70vh] hover:rotate-[60deg] transition-all duration-500"
@@ -18,11 +18,11 @@ export default function SingleProductPage() {
         />
       </div>
       {/* product details area */}
-      <div className="flex flex-col gap-5 text-red-500">
+      <div className="flex flex-col   gap-5  text-red-500">
         <h1 className="md:text-4xl text-3xl font-bold uppercase ">
           {singleProduct.title}
         </h1>
-        <p className="">{singleProduct.desc}</p>
+        <p className="text-base">{singleProduct.desc}</p>
         <Price price={singleProduct.price} options={singleProduct.options} />
       </div>
     </div>
