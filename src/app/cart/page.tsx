@@ -5,7 +5,7 @@ export default function CartPage() {
   return (
     <div className="flex flex-col md:flex-row h-screen">
       {/* Item on cart (larger side) */}
-      <div className="w-full md:h-full text-red-500 h-1/2 md:px-10 px-4 md:w-3/4  bg-gray-100 overflow-scroll">
+      <div className="w-full md:h-full text-red-500 h-1/2 md:px-10 px-4 md:w-3/4  overflow-scroll">
         {/* first item */}
         <div className="flex py-5  justify-between items-center ">
           <div>
@@ -128,7 +128,7 @@ export default function CartPage() {
           <span className="">TOTAL(INCL.VAT)</span>
           <span className="font-bold">$81.70</span>
         </div>
-        <button className="bg-red-500 text-white p-3 rounded-md w-1/2 self-end">
+        <button className="bg-red-500 text-white p-3 rounded-md w-1/2 self-end  hover:bg-red-600 transition cursor-pointer">
           CHECKOUT
         </button>
       </div>
