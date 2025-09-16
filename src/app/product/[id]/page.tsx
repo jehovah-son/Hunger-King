@@ -18,7 +18,7 @@ export default function SingleProductPage() {
         />
       </div>
       {/* product details area */}
-      <div className="flex flex-col   gap-5  text-red-500">
+      <div className="flex flex-col  gap-5  text-red-500">
         <h1 className="md:text-4xl text-3xl font-bold uppercase ">
           {singleProduct.title}
         </h1>

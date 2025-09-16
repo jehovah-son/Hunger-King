@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <div className="md:px-16 md:py-6 px-3 py-3 flex justify-between gap-3 items-center shadow-md border-b-2 text-red-500 uppercase border-red-500 ">
       <div className="md:flex gap-5 flex-1 md:block hidden">
-        <Link href="/">HomePage</Link>
+        <Link href="/">Home</Link>
         <Link href="/menu">Menu</Link>
         <Link href="/contact">Contact</Link>
       </div>
